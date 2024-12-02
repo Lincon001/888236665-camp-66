@@ -3,13 +3,88 @@
     <head>
         <title>Page Title</title>
         <meta charset="UTF-8" />
+        <style>
+            /* จัดวางให้ label และ input อยู่ในแนวเดียวกัน */
+            .form-group {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+    
+            .form-group label {
+                width: 120px; /* กำหนดความกว้างของ label */
+            }
+    
+            .form-group input {
+                margin-left: 0px;
+                max-width: 200px;
+            }
+            .form-group textarea,select{
+                margin-left: 0px;
+            }
+        </style>
     </head>
     <body>
 
-        <h1>This is a Heading OlO EiEi</h1>
-        <p>This is a paragraph.</p>
-        ภาษาไทย
+            <form style="width: 500px; margin: 0 auto;">
+                <h1>Workshop #HTML - FORM</h1>
 
-        <test>ทดสอบภาษาไทย</test>
+                <div class="form-group">
+                    <label for="first-name">ชื่อ</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+        
+                <div class="form-group">
+                    <label for="last-name">สกุล</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+                <div class="form-group">
+                    <label for="Birthday">วัน/เดือน/ปีเกิด</label>
+                    <input type="date" id="Birthday" name="Birthday">
+                </div>
+                <div class="form-group">
+                    <label for="Gender">เพศ</label>
+                    <input type="radio" id="male" name="Gender" value="Male">
+                    <label for="male">ชาย</label>
+                    <input type="radio" id="female" name="Gender" value="Female">
+                    <label for="female">หญิง</label>         
+                </div> 
+                <div class="form-group">
+                    <label for="Picture">รูป</label>
+                    <input type="file" id="myfile" name="myfile">
+                </div>
+                <div class="form-group">
+                    <label for="Address">ที่อยู่</label>
+                    <textarea rows="4" cols="40"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="FavoriteColer">สีที่ชอบ</label>
+                    <select id="FavoriteColer" name="FavoriteColer">
+                        <option value="Red">สีแดง</option>
+                        <option value="Blue">สีน้ำเงิน</option>
+                        <option value="Yellow">สีเหล</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Song">แนวเพลงที่ชอบ</label>
+                    <input type="radio" id="เพื่อชีวิต" name="Song" value="เพื่อชีวิต">
+                    <label for="เพื่อชีวิต">เพื่อชีวิต</label>
+                    <input type="radio" id="ลูกทุ่ง" name="Song" value="ลูกทุ่ง">
+                    <label for="ลูกทุ่ง">ลูกทุ่ง</label>
+                    <input type="radio" id="อื่นๆ" name="Song" value="อื่นๆ">
+                    <label for="อื่นๆ">อื่นๆ</label>  
+                </div>
+                <br>
+                <div >
+                    <input type="checkbox" name="select" id="select">
+                    <label for="select">ยินยอมให้เก็บข้อมูล</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button type="reset">Reset</button><br>
+                    &emsp13;
+                    <button type="submit">Submit</button><br>
+                </div>
+            </form>
     </body>
 </html>
