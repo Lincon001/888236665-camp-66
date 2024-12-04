@@ -1,0 +1,12 @@
+/* Mystyle.css */
+
+h1 {
+    font-size: 21pt;
+    color: blue;
+    font-weight: bold;
+}
+
+body {
+    font-size: 16pt;
+    font-family: 'Thasadith';
+}
