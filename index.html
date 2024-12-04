@@ -4,20 +4,21 @@
         <title>Page Title</title>
         <meta charset="UTF-8" />
         <style>
-            /* จัดวางให้ label และ input อยู่ในแนวเดียวกัน */
+            label{
+                width: 140px;
+            
+                margin-right: 10px;
+            }
             .form-group {
                 display: flex;
                 align-items: center;
                 margin-bottom: 10px;
             }
-    
-            .form-group label {
-                width: 120px; 
+            .form-group input,textarea,select{
+                margin-left:  10px;        
             }
-    
-            .form-group textarea,select,input{
-                margin-left: 10px;
-                max-width: 200px;
+            .form-group button{
+                margin-right: 50px;
             }
         </style>
     </head>
@@ -41,10 +42,8 @@
                 </div>
                 <div class="form-group">
                     <label for="Gender">เพศ</label>
-                    <input type="radio" id="male" name="Gender" value="Male">
-                    <label for="male">ชาย</label>
-                    <input type="radio" id="female" name="Gender" value="Female">
-                    <label for="female">หญิง</label>         
+                    <input type="radio" id="male" name="Gender" value="Male">ชาย
+                    <input type="radio" id="female" name="Gender" value="Female">หญิง
                 </div> 
                 <div class="form-group">
                     <label for="Picture">รูป</label>
@@ -64,22 +63,23 @@
                 </div>
                 <div class="form-group">
                     <label for="Song">แนวเพลงที่ชอบ</label>
-                    <input type="radio" id="เพื่อชีวิต" name="Song" value="เพื่อชีวิต">
-                    <label for="เพื่อชีวิต">เพื่อชีวิต</label>
-                    <input type="radio" id="ลูกทุ่ง" name="Song" value="ลูกทุ่ง">
-                    <label for="ลูกทุ่ง">ลูกทุ่ง</label>
-                    <input type="radio" id="อื่นๆ" name="Song" value="อื่นๆ">
-                    <label for="อื่นๆ">อื่นๆ</label>  
+                    <input type="radio" id="เพื่อชีวิต" name="Song" value="เพื่อชีวิต">เพื่อชีวิต
+                    <input type="radio" id="ลูกทุ่ง" name="Song" value="ลูกทุ่ง">ลูกทุ่ง
+                    <input type="radio" id="อื่นๆ" name="Song" value="อื่นๆ">อื่นๆ
+                </div>
+                <div class="form-group">
+                    <label for="Song">ประเภทอาหารที่ชอบ</label>
+                    <input type="radio" id="ของทอด" name="TypeFood" value="ของทอด">ของทอด
+                    <input type="radio" id="ของต้ม" name="TypeFood" value="ของต้ม">ของต้ม
+                    <input type="radio" id="อื่นๆ" name="TypeFood" value="อื่นๆ">อื่นๆ
                 </div>
                 <br>
                 <div >
-                    <input type="checkbox" name="select" id="select">
-                    <label for="select">ยินยอมให้เก็บข้อมูล</label>
+                    <input type="checkbox" name="select" id="select">ยินยอมให้เก็บข้อมูล
                 </div>
                 <br>
-                <div class="form-group">
+                <div class="form-group ">
                     <button type="reset">Reset</button><br>
-                    &emsp13;
                     <button type="submit">Submit</button><br>
                 </div>
             </form>
