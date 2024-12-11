@@ -1,12 +1,77 @@
 /* Mystyle.css */
 
 h1 {
-    font-size: 21pt;
+    font-size: 40pt;
     color: blue;
-    font-weight: bold;
+    font-weight: bolder;
+    text-align: center;
 }
 
 body {
     font-size: 16pt;
     font-family: 'Thasadith';
+    font-weight: bold;
+    background-color: bisque;
+}
+
+button[type="reset"]{
+    padding:  10px 20px;
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16pt;
+    margin-top: 20px;
+
+}
+
+button[type="reset"]:hover{
+    background-color: darkred;
+}
+
+button[type="submit"]{
+    padding:  10px 20px;
+    border: none;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16pt;
+    margin-top: 20px;
+
+}
+
+button[type="submit"]:hover{
+    background-color: darkgreen;
+}
+
+
+input:focus{
+    border-color: lime;
+    outline: none;
+}
+
+input:hover{
+    background-color: rgb(196, 193, 193);
+}
+
+textarea:focus{
+    border-color: lime;
+    outline: none;
+}
+
+textarea:hover{
+    cursor: pointer;
+    background-color: rgb(196, 193, 193);
+}
+
+select:focus{
+    border-color: lime;
+    outline: none;
+}
+
+select:hover{
+    cursor: pointer;
+    background-color: rgb(196, 193, 193);
 }
