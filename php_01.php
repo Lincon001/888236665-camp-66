@@ -9,13 +9,24 @@
             <?php
             $my_var = 2;
             ?>
-            <h1>สูตรคูณแม่ <?php echo $my_var; ?></h1>
+            <h1>สูตรคูณแม่ <?php echo $my_var; ?></h1> 
+            
             <div class="row">
                 <div class="col h2 text-end">
-                    2  x  1  =
+                <?php
+                    for ($x = 1; $x <= 12; $x++){
+                        echo $my_var." x ".$x." =";
+                        echo "<br>";
+                    }
+                    ?>
                 </div>
                 <div class = "col h2 text-start">
-                    2
+                    <?php
+                    for ($x = 1; $x <= 12; $x++){
+                        echo $my_var*$x;
+                        echo "<br>";
+                    }
+                    ?>
                 </div>
             </div>
         </div>
