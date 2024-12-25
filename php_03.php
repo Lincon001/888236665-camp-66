@@ -8,34 +8,54 @@
                 display: flex;
                 justify-content: center;
             }
+        form{
+            display: flex;
+            justify-content: center
+
+        }
+        label {
+            font-size: 4ch  ;
+        }
         
     </Style>
     </head>
+    
     <body>
-        <div class="container">
-            <?php
-            $my_var = 2;
-            ?>
-            <h1>สูตรคูณแม่ <?php echo $my_var; ?></h1> 
-            
-            <div class="row">
+        <h1>แสดงตารางสูตรคูณ ตามแม่สูตรคูณที่ระบุค่าจาก FORM</h1>
+        <form method="post">
+        <label for="number">กรอกเลขเพื่อสร้างตารางสูตรคูณ : </label>
+        <input type="number" id="number" name="number" >
+        <button type="submit">กด</button>
+        </form>
+
+        <?php
+         $number = "" ;
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $number = intval($_POST['number']);
+        }
+
+        ?>
+        <div class="row">
                 <div class="col h2 text-end">
                 <?php
+                if($number != ""){
                     for ($x = 1; $x <= 12; $x++){
-                        echo $my_var." x ".$x." =";
+                        echo $number." x ".$x." =";
                         echo "<br>";
                     }
+                }
                     ?>
                 </div>
                 <div class = "col h2 text-start">
                     <?php
+                if($number != ""){
                     for ($x = 1; $x <= 12; $x++){
-                        echo $my_var*$x;
+                        echo $number*$x;
                         echo "<br>";
                     }
+                }
                     ?>
                 </div>
-            </div>
         </div>
     </body>
 </html>
