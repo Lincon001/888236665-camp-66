@@ -56,8 +56,8 @@
         </div>
 
         <div class="mb-3">
-            <h4>My Input: <span class="text-info">{{ $myinput }}</span></h4>
-            <h4>My Value: <span class="text-success">{{ $myvalue }}</span></h4>
+            <h4>My Input: {{ $myinput }} </h4>
+            <h4>My Value: {{ $myvalue }} </h4>
         </div>
 
         <form method="post" action="{{ url('/mycontroller') }}" class="mb-4">
