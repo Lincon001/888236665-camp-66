@@ -7,13 +7,13 @@ Route::get('/mycontroller',
 [MyConTroller::class, 'myfunction']);
 
 Route::post('/mycontroller',
-[MyConTroller::class, 'myfunction']);
+[MyConTroller::class, 'MYFUNCTION']);
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('/hello/{id?}', 
+Route::get('/hello/{id?}',
     function ($val=""){
     return "<h1>Hello World! $val</h1>";
 });
