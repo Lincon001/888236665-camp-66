@@ -40,6 +40,7 @@
         body {
             font-size: 16pt;
             font-family: 'Thasadith';
+            font-weight: bold;
         }   
         h4{
             font-size: 22pt;
